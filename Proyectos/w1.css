@@ -1,0 +1,40 @@
+.encabezado{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: beige;
+    font-family: cursive;
+}
+a{
+    background: #fff; /* color de fondo */
+    color: #000000; /* color de fuente */
+    border: 2px solid #000000; /* tamaño y color de borde */
+    padding: 10px 20px;
+    border-radius: 15px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  a:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  a::after {
+    content: "";
+    background: #000000; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }
+  a:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+}

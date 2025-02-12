@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="w1.css">
+</head>
+<body>
+    <h1 class="encabezado">
+        <br>
+        <center> 
+        BIENVENIDO A MI PRIMERA PAGINA WEB 
+        </center>
+        <br>
+    </h1>
+    <h5>
+        <center>
+        <ul>
+          <li><a href='w2.html'>Proyectos</a></li>
+          <li><a href='w3.html'>Imágenes</a></li>
+          <li><a href='w4.html'>Contacto</a></li>
+        </ul>
+        </center>
+    </h5>
+    <style>
+    .encabezado{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: beige;
+    font-family: cursive;
+}
+a{
+    background: #fff; /* color de fondo */
+    color: #000000; /* color de fuente */
+    border: 2px solid #000000; /* tamaño y color de borde */
+    padding: 10px 20px;
+    border-radius: 15px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  a:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  a::after {
+    content: "";
+    background: #000000; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }
+  a:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+    }
+        body{
+    height: 800px;
+    background-image: url(https://img.fotocommunity.com/oscuro-atardecer-4d7d65b8-b3ce-4fcd-ab47-3492723e8578.jpg?height=1080) ;
+    background-size: cover;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed
+    }
+    </style>
+</body>
+</html>
